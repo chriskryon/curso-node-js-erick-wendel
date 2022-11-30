@@ -77,31 +77,3 @@ usuarioPromise
     .catch((error) => {
         console.error('Deu ruim:', error);
     })
-
-// obterUsuario(function resolverUsuario(error, usuario) {
-//     // null || "" || 0 === false
-//     if(error) {
-//         console.log('Deu ruim em usuario', error);
-//         return;
-//     }
-
-//     obterTelefone(usuario.id, function resolverTelefone(error1, telefone) {
-//         if(error1) {
-//             console.log('Deu ruim em telefone', error);
-//             return;
-//         }
-
-//         obterEndereco(usuario.id, function resolverEndereco(error2, endereco) {
-//             if(error2) {
-//                 console.log('Deu ruim em telefone', error);
-//                 return;
-//             }
-
-//             console.log(`
-//             Nome: ${usuario.nome}
-//             Endereço: ${endereco.rua}, ${endereco.numero}
-//             Telefone: ${telefone.ddd} ${telefone.telefone}
-//             `)
-//         })
-//     })
-// })
